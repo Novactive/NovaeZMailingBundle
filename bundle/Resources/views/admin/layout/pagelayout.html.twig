@@ -11,11 +11,11 @@
                 {% include "@NovaeZMailing/admin/layout/header.html.twig" with { title: novezmailing_title, subTitle: novezmailing_subtitle, breadcrumb: novezmailing_breadcrumb } only %}
                 <div class="content row">
                     <div class="col-2 sidebar">
-                        <h2>Campaigns</h2>
+                        <h2>{{ 'campaigns.sidebar.name'|trans({}, 'ezmailing') }}</h2>
                         <div class="campaigns">
                             {{ knp_menu_render('novaezmailing.menu.campaigns', {template:"@NovaeZMailing/admin/common/menu.html.twig"}) }}
                         </div>
-                        <h2>Administration</h2>
+                        <h2>{{ 'administration.sidebar.name'|trans({}, 'ezmailing') }}</h2>
                         {{ knp_menu_render('novaezmailing.menu.admin') }}
                     </div>
                     {% if rightbar is empty %}
