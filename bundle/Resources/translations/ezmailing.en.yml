@@ -3,3 +3,11 @@ campaigns.tab.name: Campaign|Campaings
 mailings.tab.name: Mailing|Mailings
 campaigns.sidebar.name: Campaigns
 campaigns.administration.name: Administration
+campaigns.subscriptions.subtitle: Campaign
+subscriptions.menu.item: Subscription|Subscriptions (%count%)
+statuses.menu.draft: draft (%count%)
+statuses.menu.pending: pending (%count%)
+statuses.menu.processing: processing (%count%)
+statuses.menu.sent: sent (%count%)
+statuses.menu.aborted: aborted (%count%)
+statuses.menu.archived: archived (%count%)

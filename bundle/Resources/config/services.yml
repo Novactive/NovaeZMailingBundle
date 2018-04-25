@@ -37,7 +37,7 @@ services:
         arguments: [!tagged novaezmailing.content.modifier]
 
     Novactive\Bundle\eZMailingBundle\Menu\Builder:
-        arguments: ["@knp_menu.factory"]
+        arguments: ["@knp_menu.factory", "@translator.default"]
 
     novaezmailing.menu.main:
         class: Knp\Menu\MenuItem

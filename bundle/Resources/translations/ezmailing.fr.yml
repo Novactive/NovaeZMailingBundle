@@ -3,3 +3,11 @@ campaigns.tab.name: Campagne|Campagnes
 mailings.tab.name: Mailing|Mailings
 campaigns.sidebar.name: Campagnes
 administration.sidebar.name: Administration
+subscriptions.menu.item: Abonnement|Abonnements (%count%)
+statuses.menu.draft: brouillon (%count%)
+statuses.menu.pending: en attente (%count%)
+statuses.menu.processing: en cours (%count%)
+statuses.menu.sent: envoyé (%count%)
+statuses.menu.aborted: abandonné (%count%)
+statuses.menu.archived: archivé (%count%)
+campaigns.subscriptions.subtitle: Campagne

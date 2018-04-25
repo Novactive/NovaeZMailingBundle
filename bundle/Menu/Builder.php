@@ -18,9 +18,10 @@ use Knp\Menu\ItemInterface;
 use Novactive\Bundle\eZMailingBundle\Entity\Campaign;
 use Novactive\Bundle\eZMailingBundle\Entity\Mailing;
 use Novactive\Bundle\eZMailingBundle\Entity\User;
-use Novactive\Bundle\eZMailingBundle\Security\Voter\Campaign as CampaignVoter;
+use Symfony\Bundle\FrameworkBundle\Translation\Translator;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
+use Novactive\Bundle\eZMailingBundle\Security\Voter\Campaign as CampaignVoter;
 
 /**
  * Class Builder.
@@ -32,20 +33,18 @@ class Builder
      */
     private $factory;
 
-    /**
-     * @var AuthorizationCheckerInterface
-     */
-    private $authorizationChecker;
+    /** @var Translator */
+    private $translator;
 
     /**
-     * Builder constructor.
-     *
-     * @param FactoryInterface              $factory
+     * @param FactoryInterface $factory
+     * @param Translator $translator
      * @param AuthorizationCheckerInterface $authorizationChecker
      */
-    public function __construct(FactoryInterface $factory, AuthorizationCheckerInterface $authorizationChecker)
+    public function __construct(FactoryInterface $factory, Translator $translator, AuthorizationCheckerInterface $authorizationChecker)
     {
-        $this->factory              = $factory;
+        $this->factory = $factory;
+        $this->translator = $translator;
         $this->authorizationChecker = $authorizationChecker;
     }
 
@@ -113,7 +112,7 @@ class Builder
                 [
                     'route'           => 'novaezmailing_campaign_subscriptions',
                     'routeParameters' => ['campaign' => $campaign->getId()],
-                    'label'           => 'Subscriptions'." ({$count})",
+                    'label'           => $this->translator->transChoice('subscriptions.menu.item', $count ,['%count%' => $count], 'ezmailing'),
                     'attributes'      => [
                         'class' => 'leaf subscriptions',
                     ],
