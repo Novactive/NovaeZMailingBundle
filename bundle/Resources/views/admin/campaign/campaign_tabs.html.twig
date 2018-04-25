@@ -1,16 +1,16 @@
 <div class="item-tabs-content">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" href="#novaezmailing-campaign-preview" data-toggle="tab" role="tab">Campaign</a>
+            <a class="nav-link active" href="#novaezmailing-campaign-preview" data-toggle="tab" role="tab">{{ 'tabs.campaign'|trans({}, 'ezmailing') }}</a>
         </li>
         {% if item.locationId is not null %}
             <li class="nav-item">
-                <a class="nav-link" href="#novaezmailing-content-preview" data-toggle="tab" role="tab">Associated eZ Content</a>
+                <a class="nav-link" href="#novaezmailing-content-preview" data-toggle="tab" role="tab">{{ 'tabs.content'|trans({}, 'ezmailing') }}</a>
             </li>
         {% endif %}
         {% if item.mailings|length > 0 %}
             <li class="nav-item">
-                <a class="nav-link" href="#novaezmailing-mailings-preview" data-toggle="tab" role="tab">Mailings</a>
+                <a class="nav-link" href="#novaezmailing-mailings-preview" data-toggle="tab" role="tab">{{ 'tabs.mailing'|trans({}, 'ezmailing') }}</a>
             </li>
         {% endif %}
     </ul>

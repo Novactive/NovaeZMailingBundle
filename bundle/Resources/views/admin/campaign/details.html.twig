@@ -1,14 +1,14 @@
 <table class="table table-striped table-hover table-sm">
     <tr>
-        <th>Name</th>
+        <th>{{ 'campaign.details.name'|trans({}, 'ezmailing') }}</th>
         <td>{{ item.name }}</td>
     </tr>
     <tr>
-        <th>Sender</th>
+        <th>{{ 'campaign.details.sender'|trans({}, 'ezmailing') }}</th>
         <td>{{ item.senderName }} &lt;{{ item.senderEmail }}&gt;</td>
     </tr>
     <tr>
-        <th>Report Email</th>
+        <th>{{ 'campaign.details.report_email'|trans({}, 'ezmailing') }}</th>
         <td>{{ item.reportEmail }}</td>
     </tr>
     {% if item.siteaccessLimit|length > 0 %}
@@ -26,7 +26,7 @@
         </tr>
     {% endif %}
     <tr>
-        <th>Mailing Lists</th>
+        <th>{{ 'campaign.details.mailing_lists'|trans({}, 'ezmailing') }}</th>
         <td>
             <div class="list-group">
                 {% for mailingList in item.mailingLists %}
@@ -41,7 +41,7 @@
     </tr>
     {% if item.content is defined and item.content is not null %}
         <tr>
-            <th>Associated content</th>
+            <th>{{ 'campaign.details.associated_content'|trans({}, 'ezmailing') }}</th>
             <td>{{ ez_content_name(item.content) }}</td>
         </tr>
     {% endif %}

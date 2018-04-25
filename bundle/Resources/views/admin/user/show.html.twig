@@ -1,9 +1,9 @@
-{% extends '@NovaeZMailing/Admin/Layout/pagelayout.html.twig' %}
+{% extends '@NovaeZMailing/admin/layout/pagelayout.html.twig' %}
 
 {% block novezmailing_breadcrumb %}
     <ol class="breadcrumb px-4">
         <li class="breadcrumb-item"><a href="{{ path("novaezmailing_dashboard_index") }}">Nova eZ Mailing</a></li>
-        <li class="breadcrumb-item"><a href="{{ path("novaezmailing_user_index") }}">Users</a></li>
+        <li class="breadcrumb-item"><a href="{{ path("novaezmailing_user_index") }}">{{ 'campaign.breadcrumb.users'|trans({}, 'ezmailing') }}</a></li>
         <li class="breadcrumb-item active">{{ item.gender }} {{ item.firstName }} {{ item.lastname }}</li>
     </ol>
 {% endblock %}
@@ -22,65 +22,65 @@
                 <tr>
                     <th>Email</th>
                     <td>{{ item.email }} -
-                        <span class="badge badge-{{ item.statusStyle }}">{{ item.status }}</span></td>
+                        <span class="badge badge-{{ item.statusStyle }}">{{ ('statuses.user.'~item.status)|trans({}, 'ezmailing') }}</span></td>
                 </tr>
                 <tr>
-                    <th>First Name</th>
+                    <th>{{ 'users.table.first_name'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.firstName }}</td>
                 </tr>
                 <tr>
-                    <th>Last Name</th>
+                    <th>{{ 'users.table.last_name'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.lastName }}</td>
                 </tr>
                 <tr>
-                    <th>Gender</th>
+                    <th>{{ 'users.table.gender'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.gender }}</td>
                 </tr>
                 <tr>
-                    <th>Birth date</th>
+                    <th>{{ 'users.table.date_birth'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.birthDate|localizeddate(novaezmailing.dateformat.date, novaezmailing.dateformat.date) }}</td>
                 </tr>
                 <tr>
-                    <th>Phone</th>
+                    <th>{{ 'users.table.phone'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.phone }}</td>
                 </tr>
                 <tr>
-                    <th>Zipcode</th>
+                    <th>{{ 'users.table.zipcode'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.zipcode }}</td>
                 </tr>
                 <tr>
-                    <th>City</th>
+                    <th>{{ 'users.table.city'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.city }}</td>
                 </tr>
                 <tr>
-                    <th>State</th>
+                    <th>{{ 'users.table.state'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.state }}</td>
                 </tr>
                 <tr>
-                    <th>Country</th>
+                    <th>{{ 'users.table.country'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.country|country_name }}</td>
                 </tr>
                 <tr>
-                    <th>Job Title</th>
+                    <th>{{ 'users.table.job_title'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.jobTitle }}</td>
                 </tr>
                 <tr>
-                    <th>Company</th>
+                    <th>{{ 'users.table.company'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.company }}</td>
                 </tr>
                 <tr>
-                    <th>Origin</th>
+                    <th>{{ 'users.table.origin'|trans({}, 'ezmailing') }}</th>
                     <td>{{ item.origin }}</td>
                 </tr>
             </table>
         </div>
         <div class="col-md-6">
-            <h3>Registrations</h3>
+            <h3>{{ 'users.table.registrations'|trans({}, 'ezmailing') }}</h3>
             <table class="table table-hover table-sm">
                 <tr>
-                    <th>Mailing List</th>
-                    <th>Updated</th>
-                    <th>Created</th>
+                    <th>{{ 'users.table.mailing_list'|trans({}, 'ezmailing') }}</th>
+                    <th>{{ 'users.table.updated'|trans({}, 'ezmailing') }}</th>
+                    <th>{{ 'users.table.created'|trans({}, 'ezmailing') }}</th>
                 </tr>
                 {% for registration in item.registrations %}
                     <tr>

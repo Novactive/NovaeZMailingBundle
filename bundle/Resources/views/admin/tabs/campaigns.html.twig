@@ -1,14 +1,15 @@
-<p>This content is part of {{ items|length }} campaigns.</p>
+{% if items is defined and not items is empty %}
+        <p>{{ 'campaigns.tab.content'|trans({'%count%': items|length }, 'ezmailing') }}</p>
+    {% for item in items %}
+        <div class="ez-table-header">
+            <div class="ez-table-header__headline">
+                <img src="{{ asset("/bundles/novaezmailing/admin/images/32x32/campaign.png") }}" class="nova-icon" />
 
-{% for item in items %}
-    <div class="ez-table-header">
-        <div class="ez-table-header__headline">
-            <img src="{{ asset("/bundles/novaezmailing/admin/images/32x32/campaign.png") }}" class="nova-icon" />
-
-            {{ item.name }} - {{ item.mailings|length }} Mailings
+                {{ item.name }} - {{ item.mailings|length }} Mailings
+            </div>
         </div>
-    </div>
-    <div class="novaezmailing-ez-mailings-view">
-        {% include "@NovaeZMailing/admin/common/list/mailings.html.twig" with { withTitle: false, items: item.mailings} only %}
-    </div>
-{% endfor %}
+        <div class="novaezmailing-ez-mailings-view">
+            {% include "@NovaeZMailing/admin/common/list/mailings.html.twig" with { withTitle: false, items: item.mailings} only %}
+        </div>
+    {% endfor %}
+{% endif %}

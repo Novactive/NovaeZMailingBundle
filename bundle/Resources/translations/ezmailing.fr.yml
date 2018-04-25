@@ -1,17 +1,68 @@
 ---
 administration.sidebar.name: Administration
+administration.sidebar.mailing_list: Listes de diffusion
+administration.sidebar.users: Utilisateurs
+approbation.yes: oui
+approbation.no: non
+campaign.breadcrumb.campaigns: Campagnes
+campaign.breadcrumb.mailings: Mailings
+campaign.breadcrumb.subscriptions: Abonnements
+campaign.breadcrumb.mailinglist: Liste de diffusion
+campaign.breadcrumb.users: Utilisateurs
+campaign.details.name: Nom
+campaign.details.sender: Expéditeur
+campaign.details.report_email: Signaler Email
+campaign.details.mailing_lists: Listes de diffusion
+campaign.details.associated_content: Contenu associé
+campaign.mailings.name: Campagne
 campaigns.tab.name: Campagne|Campagnes
+campaigns.tab.content: Cet contenu est parmi les %count% campagnes.
 campaigns.sidebar.name: Campagnes
 campaigns.subscriptions.subtitle: Campagne
 campaigns.subscriptions.header2: Abonnements
+dashboard.title: Tableau de bord
+dashboard.subtitle: Présentation rapide
+dashboard.button.new_mailing: Nouvel envoi
 header.search.placeholder: Rechercher
+mailing.subtitle: Mailing
+mailing.details.name: Nom
+mailing.details.status: Statut
+mailing.details.last_sent_date: Date du dernier envoi
+mailing.details.frequency: Fréquence
+mailing.details.rules: Règles
+mailing.details.hours_day: Heures par jour
+mailing.details.days_week: Jours par semaine
+mailing.details.days_month: Jours par mois
+mailing.details.weeks_month: Semaines par mois
+mailing.details.months_year: Mois par année
+mailing.details.weeks_year: Semaines par année
+mailing.details.next_sending_date: Date du prochain envoi
+mailing.details.sending_date: Date d'envoi
+mailing.details.in_progress: Actuellement en cours...
+mailinglist.title: Liste de diffusion
+mailinglist.subtitle: Groupe d'utilisateurs
+mailinglist.table.name: Nom
+mailinglist.table.approbation: Approbation
+mailinglist.table.updated: Mise à jour le
+mailinglist.table.created: Créé le
+mailinglist.table.registrations_count: Nombre d'inscriptions
 mailings.tab.name: Mailing|Mailings
-statuses.menu.draft: brouillon (%count%)
+mailings.tab.content: Cet contenu est parmi les %count% mailings.
+mailings.list.name: Nom
+mailings.list.status: Statut
+mailings.link.edit: modifier
+mailings.status.draft: brouillon
+mailings.status.pending: en attente
+mailings.status.processing: en cours
+mailings.status.sent: envoyé
+mailings.status.aborted: abandonné
+mailings.status.archived: archivé
+statuses.menu.draft: '{0} pas de brouillon|{1} brouillon (%count%)|]1, Inf[ brouillons (%count%)'
 statuses.menu.pending: en attente (%count%)
 statuses.menu.processing: en cours (%count%)
-statuses.menu.sent: envoyé (%count%)
-statuses.menu.aborted: abandonné (%count%)
-statuses.menu.archived: archivé (%count%)
+statuses.menu.sent: "{0} pas d'envoi|{1} envoyé (%count%)|]1, Inf[ envoyés (%count%)"
+statuses.menu.aborted: "{0} pas d'abandon|{1} abandonné (%count%)|]1, Inf[ abandonnés (%count%)"
+statuses.menu.archived: "{0} pas d'archive|{1} archivé (%count%)|]1, Inf[ archivés (%count%)"
 statuses.user.all: Tous
 statuses.user.pending: en attente
 statuses.user.confirmed: confirmé
@@ -19,13 +70,19 @@ statuses.user.soft_bounce: rebond temporaire
 statuses.user.hard_bounce: rebond définitif
 statuses.user.blacklisted: liste noire
 subscriptions.menu.item: Abonnement|Abonnements (%count%)
+tabs.mailing: Mailing
+tabs.content: Contenu eZ Associé
+tabs.campaign: Campagne
+tabs.stats: Stats
 registration.button.approve: Approuver
 registration.button.deny: Décliner
+user.title: Utilisateurs
+user.subtitle: '%count% entrée|%count% entrées'
 users.table.email: Email
 users.table.status: Statut
 users.table.country: Pays
 users.table.origin: Origine
-users.table.mailing_list: Liste d'emails
+users.table.mailing_list: Liste de mailings
 users.table.approbation: Approbation
 users.table.updated: Mise à jour le
 users.table.created: Créé le
@@ -34,3 +91,11 @@ users.table.date_birth: Date de naissance
 users.table.phone: Téléphone
 users.table.location: Emplacement
 users.table.job: Travail
+users.table.first_name: Prénom
+users.table.last_name: Nom
+users.table.gender: Genre/Titre
+users.table.city: Ville
+users.table.zipcode: Code postal
+users.table.state: Etat/Région
+users.table.job_title: Métier
+users.table.company: Société

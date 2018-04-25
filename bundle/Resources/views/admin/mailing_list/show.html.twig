@@ -3,13 +3,12 @@
 {% block novezmailing_breadcrumb %}
     <ol class="breadcrumb px-4">
         <li class="breadcrumb-item"><a href="{{ path("novaezmailing_dashboard_index") }}">Nova eZ Mailing</a></li>
-        <li class="breadcrumb-item"><a href="{{ path("novaezmailing_mailinglist_index") }}">Mailing Lists</a></li>
+        <li class="breadcrumb-item"><a href="{{ path("novaezmailing_mailinglist_index") }}">{{ 'campaign.breadcrumb.mailinglist'|trans({}, 'ezmailing') }}</a></li>
         <li class="breadcrumb-item active">{{ item.name }}</li>
     </ol>
 {% endblock %}
-{% block novezmailing_title %}
-    <img src="{{ asset("/bundles/novaezmailing/admin/images/32x32/mailinglist.png") }}" class="nova-icon"/> {{ item.name }}{% endblock %}
-{% block novezmailing_subtitle %}Mailing List{% endblock %}
+{% block novezmailing_title %}<img src="{{ asset("/bundles/novaezmailing/admin/images/32x32/mailinglist.png") }}" class="nova-icon"/> {{ item.name }}{% endblock %}
+{% block novezmailing_subtitle %}{{ 'campaign.breadcrumb.mailinglist'|trans({}, 'ezmailing') }}{% endblock %}
 
 {% block content %}
     {% if pager.nbResults > 0 %}

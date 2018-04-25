@@ -1,16 +1,67 @@
 ---
 administration.sidebar.name: Administration
+administration.sidebar.mailing_list: Mailing Lists
+administration.sidebar.users: Users
+approbation.yes: yes
+approbation.no: no
+campaign.breadcrumb.campaigns: Campaigns
+campaign.breadcrumb.mailings: Mailings
+campaign.breadcrumb.subscriptions: Subscriptions
+campaign.breadcrumb.mailinglist: Mailing Lists
+campaign.breadcrumb.users: Users
+campaign.details.name: Name
+campaign.details.sender: Sender
+campaign.details.report_email: Report Email
+campaign.details.mailing_lists: Mailing lists
+campaign.details.associated_content: Associated content
+campaign.mailings.name: Campaign
 campaigns.tab.name: Campaign|Campaings
+campaigns.tab.content: This content is part of %count% campaigns.
 campaigns.sidebar.name: Campaigns
 campaigns.administration.name: Administration
 campaigns.subscriptions.subtitle: Campaign
 campaigns.subscriptions.header2: Subscriptions
+dashboard.title: Dashboard
+dashboard.subtitle: Quick overview
+dashboard.button.new_mailing: New Mailing
 header.search.placeholder: Search
+mailing.subtitle: Mailing
+mailing.details.name: Name
+mailing.details.status: Status
+mailing.details.last_sent_date: Last sent date
+mailing.details.frequency: Frequency
+mailing.details.rules: Rules
+mailing.details.hours_day: Hours of the Day
+mailing.details.days_week: Days of the Week
+mailing.details.days_month: Days of the Month
+mailing.details.weeks_month: Weeks of the Month
+mailing.details.months_year: Months of the Year
+mailing.details.weeks_year: Weeks of the Year
+mailing.details.next_sending_date: Next sending date
+mailing.details.sending_date: Sending date
+mailing.details.in_progress: Currently in progress...
+mailinglist.title: Mailing Lists
+mailinglist.subtitle: Group of users
+mailinglist.table.name: Name
+mailinglist.table.approbation: Approbation
+mailinglist.table.updated: Updated
+mailinglist.table.created: Created
+mailinglist.table.registrations_count: Registrations Count
 mailings.tab.name: Mailing|Mailings
-statuses.menu.draft: draft (%count%)
-statuses.menu.pending: pending (%count%)
+mailings.tab.content: This content is part of %count% mailings.
+mailings.list.name: Name
+mailings.list.status: Status
+mailings.link.edit: edit
+mailings.status.draft: draft
+mailings.status.pending: pending
+mailings.status.processing: processing
+mailings.status.sent: sent
+mailings.status.aborted: aborted
+mailings.status.archived: archived
+statuses.menu.draft: '{0} no draft|{1} draft (%count%)|]1, Inf[drafts (%count%)'
+statuses.menu.pending: '{0} no pending|{1} pending (%count%)|]1, Inf[pendings (%count%)'
 statuses.menu.processing: processing (%count%)
-statuses.menu.sent: sent (%count%)
+statuses.menu.sent: '{0} not sent|{1} sent (%count%)|]1, Inf[sents (%count%)'
 statuses.menu.aborted: aborted (%count%)
 statuses.menu.archived: archived (%count%)
 statuses.user.all: All
@@ -20,8 +71,14 @@ statuses.user.soft_bounce: soft bounce
 statuses.user.hard_bounce: hard bounce
 statuses.user.blacklisted: black listed
 subscriptions.menu.item: Subscription|Subscriptions (%count%)
+tabs.mailing: Mailing
+tabs.content: Associated eZ Content
+tabs.campaign: Campaign
+tabs.stats: Stats
 registration.button.approve: Approve
 registration.button.deny: Deny
+user.title: Users
+user.subtitle: '%count% entry|%count% entries'
 users.table.email: Email
 users.table.status: Status
 users.table.country: Country
@@ -35,3 +92,11 @@ users.table.date_birth: Date birth
 users.table.phone: Phone
 users.table.location: Location
 users.table.job: Job
+users.table.first_name: First Name
+users.table.last_name: Last Name
+users.table.gender: Gender
+users.table.city: City
+users.table.zipcode: Zip code
+users.table.state: State
+users.table.job_title: Job title
+users.table.company: Company

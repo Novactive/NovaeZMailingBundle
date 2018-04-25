@@ -63,14 +63,14 @@ class Builder
         $menu  = $this->factory->createItem('root');
         $child = $menu->addChild(
             'mailinglists',
-            ['route' => "{$mailingRoute}_index", 'label' => 'Mailing Lists']
+            ['route' => "{$mailingRoute}_index", 'label' =>  $this->translator->trans('administration.sidebar.mailing_list', [], 'ezmailing')]
         );
 
         if (substr($route, 0, \strlen($mailingRoute)) === $mailingRoute) {
             $child->setCurrent(true);
         }
 
-        $child = $menu->addChild('users', ['route' => "{$userRoute}_index", 'label' => 'Users']);
+        $child = $menu->addChild('users', ['route' => "{$userRoute}_index", 'label' => $this->translator->trans('administration.sidebar.users', [], 'ezmailing')]);
         if (substr($route, 0, \strlen($userRoute)) === $userRoute) {
             $child->setCurrent(true);
         }
