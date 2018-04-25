@@ -1,7 +1,7 @@
 {% macro show(item) %}
 
-    {% set approveText = 'Approve' %}
-    {% set denyText = 'Deny' %}
+    {% set approveText = 'registration.button.approve'|trans({}, 'ezmailing') %}
+    {% set denyText = 'registration.button.deny'|trans({}, 'ezmailing') %}
 
     <div class="novaezmailing-registration-approbation"
          data-endpoint-accept="{{ path("novaezmailing_registration_accept", {registration:item.id}) }}"

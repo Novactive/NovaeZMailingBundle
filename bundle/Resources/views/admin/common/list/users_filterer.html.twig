@@ -10,9 +10,9 @@
     </div>
     <div class="ml-auto p-2">
         <div class="btn-group btn-group-sm">
-            <a href="{{ path(route, {limit: limit}|merge(extraParams)) }}" class="btn btn-{% if currentStatus == 'all' %}primary{% else %}secondary{% endif %}">All <span class="badge badge-light">{{ statuses.count }}</span></a>
+            <a href="{{ path(route, {limit: limit}|merge(extraParams)) }}" class="btn btn-{% if currentStatus == 'all' %}primary{% else %}secondary{% endif %}">{{ 'statuses.user.all'|trans({}, 'ezmailing') }} <span class="badge badge-light">{{ statuses.count }}</span></a>
             {% for statusId, statusCount in statuses.results %}
-                <a href="{{ path(route, {limit: limit, status:statusId}|merge(extraParams)) }}" class="btn btn-{% if currentStatus == statusId %}primary{% else %}secondary{% endif %}">{{ statusId }} <span class="badge badge-{{ styles[statusId] }}">{{ statusCount }}</span></a>
+                <a href="{{ path(route, {limit: limit, status:statusId}|merge(extraParams)) }}" class="btn btn-{% if currentStatus == statusId %}primary{% else %}secondary{% endif %}">{{ ('statuses.user.'~statusId)|trans({}, 'ezmailing', 'fr') }} <span class="badge badge-{{ styles[statusId] }}">{{ statusCount }}</span></a>
             {% endfor %}
         </div>
     </div>

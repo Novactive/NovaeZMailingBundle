@@ -1,13 +1,36 @@
 ---
-campaigns.tab.name: Campagne|Campagnes
-mailings.tab.name: Mailing|Mailings
-campaigns.sidebar.name: Campagnes
 administration.sidebar.name: Administration
-subscriptions.menu.item: Abonnement|Abonnements (%count%)
+campaigns.tab.name: Campagne|Campagnes
+campaigns.sidebar.name: Campagnes
+campaigns.subscriptions.subtitle: Campagne
+campaigns.subscriptions.header2: Abonnements
+header.search.placeholder: Rechercher
+mailings.tab.name: Mailing|Mailings
 statuses.menu.draft: brouillon (%count%)
 statuses.menu.pending: en attente (%count%)
 statuses.menu.processing: en cours (%count%)
 statuses.menu.sent: envoyé (%count%)
 statuses.menu.aborted: abandonné (%count%)
 statuses.menu.archived: archivé (%count%)
-campaigns.subscriptions.subtitle: Campagne
+statuses.user.all: Tous
+statuses.user.pending: en attente
+statuses.user.confirmed: confirmé
+statuses.user.soft_bounce: rebond temporaire
+statuses.user.hard_bounce: rebond définitif
+statuses.user.blacklisted: liste noire
+subscriptions.menu.item: Abonnement|Abonnements (%count%)
+registration.button.approve: Approuver
+registration.button.deny: Décliner
+users.table.email: Email
+users.table.status: Statut
+users.table.country: Pays
+users.table.origin: Origine
+users.table.mailing_list: Liste d'emails
+users.table.approbation: Approbation
+users.table.updated: Mise à jour le
+users.table.created: Créé le
+users.table.registrations: Inscriptions
+users.table.date_birth: Date de naissance
+users.table.phone: Téléphone
+users.table.location: Emplacement
+users.table.job: Travail
