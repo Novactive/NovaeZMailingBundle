@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-let subItemsModule = path.resolve(__dirname, '../../../../../ezplatform/vendor/ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js');
+let subItemsModule = path.resolve(__dirname, '../../../../../ezsystems/ezplatform-admin-ui/src/bundle/ui-dev/src/modules/sub-items/sub.items.module.js');
 if (fs.existsSync(subItemsModule)) {
 } else {
     //todo
